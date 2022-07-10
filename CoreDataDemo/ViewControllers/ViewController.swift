@@ -22,16 +22,16 @@ class ViewController: UIViewController {
         // enity description
         let entityDescription = NSEntityDescription.entity(forEntityName: "Person", in: context)
         
-        // create manager of objects
-        let managerObject = NSManagedObject(entity: entityDescription!, insertInto: context)
+        // create managed object
+        let managedObject = Person(entity: entityDescription!, insertInto: context)
         
         // set atribute values
-        managerObject.setValue("Jhon", forKey: "name")
-        managerObject.setValue(18, forKey: "age")
+        managedObject.name = "Anna"
+        managedObject.age = 24
         
         // get atribute values
-        let name = managerObject.value(forKey: "name")
-        let age = managerObject.value(forKey: "age")
+        let name = managedObject.name
+        let age = managedObject.age
         
         print("\(name) \(age)")
         
@@ -41,9 +41,9 @@ class ViewController: UIViewController {
         // get data
         let  fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
         do {
-            let results = try context.fetch(fetchRequest) as? [NSManagedObject]
+            let results = try context.fetch(fetchRequest) as? [Person]
             for result in results! {
-                print("name - \(result.value(forKey: "name")), age - \(result.value(forKey: "age"))")
+                print("name - \(result.name), age - \(result.age)")
             }
         } catch {
             print(error)
