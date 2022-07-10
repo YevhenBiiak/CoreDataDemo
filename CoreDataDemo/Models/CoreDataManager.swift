@@ -47,6 +47,18 @@ class CoreDataManager {
     func entityDescription(forName name: String) -> NSEntityDescription? {
         return NSEntityDescription.entity(forEntityName: name, in: context)
     }
+    
+    func fetchedResultsController(entityName: String, sortKey: String) -> NSFetchedResultsController<NSFetchRequestResult> {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        let sortDescriptor = NSSortDescriptor(key: sortKey, ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        let fetchedResultsController = NSFetchedResultsController(
+            fetchRequest: fetchRequest,
+            managedObjectContext: CoreDataManager.shared.context,
+            sectionNameKeyPath: nil,
+            cacheName: nil)
+        return fetchedResultsController
+    }
 
     // MARK: - Core Data Saving support
 

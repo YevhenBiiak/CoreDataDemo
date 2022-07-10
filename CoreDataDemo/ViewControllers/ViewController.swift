@@ -16,17 +16,13 @@ class ViewController: UIViewController {
         let dataManager = CoreDataManager.shared
         
         // create managed object
-        let managedObject = Person()
+        let person1 = Person(name: "Jhon", age: 22)
+        let person2 = Person(name: "Anna", age: 29)
+        let person3 = Person(name: "David", age: 33)
         
-        // set atribute values
-        managedObject.name = "Anna"
-        managedObject.age = 24
-        
-        // get atribute values
-        let name = managedObject.name
-        let age = managedObject.age
-        
-        print("\(name!) \(age)")
+        print("\(person1.name!) \(person1.age)")
+        print("\(person2.name!) \(person1.age)")
+        print("\(person3.name!) \(person1.age)")
         
         // save data from context
         dataManager.saveContext()
@@ -50,7 +46,7 @@ class ViewController: UIViewController {
         } catch {
             print(error)
         }
-        
+
         // save empty data from context
         dataManager.saveContext()
         

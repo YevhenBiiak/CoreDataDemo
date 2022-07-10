@@ -17,6 +17,8 @@
 		57AC1643287B080200C7D878 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC1641287B080200C7D878 /* Person+CoreDataClass.swift */; };
 		57AC1644287B080200C7D878 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC1642287B080200C7D878 /* Person+CoreDataProperties.swift */; };
 		57AC1649287B0BE400C7D878 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC1648287B0BE400C7D878 /* CoreDataManager.swift */; };
+		57AC164B287B1C2900C7D878 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC164A287B1C2900C7D878 /* TableViewController.swift */; };
+		57AC164D287B23E800C7D878 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC164C287B23E800C7D878 /* AddPersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		57AC1641287B080200C7D878 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
 		57AC1642287B080200C7D878 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		57AC1648287B0BE400C7D878 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		57AC164A287B1C2900C7D878 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		57AC164C287B23E800C7D878 /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				57AC162D287AFBC800C7D878 /* ViewController.swift */,
+				57AC164A287B1C2900C7D878 /* TableViewController.swift */,
+				57AC164C287B23E800C7D878 /* AddPersonViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -197,7 +203,9 @@
 			files = (
 				57AC162E287AFBC800C7D878 /* ViewController.swift in Sources */,
 				57AC1634287AFBC800C7D878 /* CoreDataDemo.xcdatamodeld in Sources */,
+				57AC164D287B23E800C7D878 /* AddPersonViewController.swift in Sources */,
 				57AC1644287B080200C7D878 /* Person+CoreDataProperties.swift in Sources */,
+				57AC164B287B1C2900C7D878 /* TableViewController.swift in Sources */,
 				57AC1643287B080200C7D878 /* Person+CoreDataClass.swift in Sources */,
 				57AC162A287AFBC800C7D878 /* AppDelegate.swift in Sources */,
 				57AC1649287B0BE400C7D878 /* CoreDataManager.swift in Sources */,
