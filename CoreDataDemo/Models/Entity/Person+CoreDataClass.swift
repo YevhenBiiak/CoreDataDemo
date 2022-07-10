@@ -11,5 +11,9 @@ import CoreData
 
 @objc(Person)
 public class Person: NSManagedObject {
-
+    
+    convenience init() {
+        self.init(entity: CoreDataManager.shared.entityDescription(forName: "Person")!, insertInto: CoreDataManager.shared.context)
+    }
+    
 }

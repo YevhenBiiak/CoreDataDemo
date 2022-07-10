@@ -13,17 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // get reference to AppDelegate
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        
-        // create context
-        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-        
-        // enity description
-        let entityDescription = NSEntityDescription.entity(forEntityName: "Person", in: context)
+        let dataManager = CoreDataManager.shared
         
         // create managed object
-        let managedObject = Person(entity: entityDescription!, insertInto: context)
+        let managedObject = Person()
         
         // set atribute values
         managedObject.name = "Anna"
@@ -33,17 +26,16 @@ class ViewController: UIViewController {
         let name = managedObject.name
         let age = managedObject.age
         
-        print("\(name) \(age)")
+        print("\(name!) \(age)")
         
-        // save data
-        appDelegate.saveContext()
+        // save data from context
+        dataManager.saveContext()
         
-        // get data
-        let  fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Person")
+        // fetsh data into context
         do {
-            let results = try context.fetch(fetchRequest) as? [Person]
-            for result in results! {
-                print("name - \(result.name), age - \(result.age)")
+            let results = try dataManager.context.fetch(Person.fetchRequest())
+            for result in results {
+                print("name - \(result.name!), age - \(result.age)")
             }
         } catch {
             print(error)
@@ -51,14 +43,16 @@ class ViewController: UIViewController {
         
         // remove all objects from context
         do {
-            let results = try context.fetch(fetchRequest) as? [NSManagedObject]
-            for result in results! {
-                context.delete(result)
+            let results = try dataManager.context.fetch(Person.fetchRequest())
+            for result in results {
+                dataManager.context.delete(result)
             }
         } catch {
             print(error)
         }
-        appDelegate.saveContext()
+        
+        // save empty data from context
+        dataManager.saveContext()
         
     }
 }
