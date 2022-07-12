@@ -16,9 +16,9 @@ class ViewController: UIViewController {
         let dataManager = CoreDataManager.shared
         
         // create managed object
-        let person1 = Person(name: "Jhon", age: 22)
-        let person2 = Person(name: "Anna", age: 29)
-        let person3 = Person(name: "David", age: 33)
+        let person1 = Person(name: "Jhon", age: 22, department: "")
+        let person2 = Person(name: "Anna", age: 29, department: "")
+        let person3 = Person(name: "David", age: 33, department: "")
         
         print("\(person1.name!) \(person1.age)")
         print("\(person2.name!) \(person1.age)")

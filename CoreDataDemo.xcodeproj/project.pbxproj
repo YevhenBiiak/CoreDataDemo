@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57969311287C4CD400096F58 /* DepartmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57969310287C4CD400096F58 /* DepartmentsTableViewController.swift */; };
+		57969313287C4CE700096F58 /* AddDepartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57969312287C4CE700096F58 /* AddDepartmentViewController.swift */; };
+		57969316287C4F0A00096F58 /* Department+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57969314287C4F0A00096F58 /* Department+CoreDataClass.swift */; };
+		57969317287C4F0A00096F58 /* Department+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57969315287C4F0A00096F58 /* Department+CoreDataProperties.swift */; };
 		57AC162A287AFBC800C7D878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC1629287AFBC800C7D878 /* AppDelegate.swift */; };
 		57AC162C287AFBC800C7D878 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC162B287AFBC800C7D878 /* SceneDelegate.swift */; };
 		57AC162E287AFBC800C7D878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC162D287AFBC800C7D878 /* ViewController.swift */; };
@@ -17,11 +21,15 @@
 		57AC1643287B080200C7D878 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC1641287B080200C7D878 /* Person+CoreDataClass.swift */; };
 		57AC1644287B080200C7D878 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC1642287B080200C7D878 /* Person+CoreDataProperties.swift */; };
 		57AC1649287B0BE400C7D878 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC1648287B0BE400C7D878 /* CoreDataManager.swift */; };
-		57AC164B287B1C2900C7D878 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC164A287B1C2900C7D878 /* TableViewController.swift */; };
+		57AC164B287B1C2900C7D878 /* PersonnelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC164A287B1C2900C7D878 /* PersonnelTableViewController.swift */; };
 		57AC164D287B23E800C7D878 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC164C287B23E800C7D878 /* AddPersonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57969310287C4CD400096F58 /* DepartmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsTableViewController.swift; sourceTree = "<group>"; };
+		57969312287C4CE700096F58 /* AddDepartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepartmentViewController.swift; sourceTree = "<group>"; };
+		57969314287C4F0A00096F58 /* Department+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Department+CoreDataClass.swift"; sourceTree = "<group>"; };
+		57969315287C4F0A00096F58 /* Department+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Department+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		57AC1626287AFBC800C7D878 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AC1629287AFBC800C7D878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57AC162B287AFBC800C7D878 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,7 +42,7 @@
 		57AC1641287B080200C7D878 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
 		57AC1642287B080200C7D878 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		57AC1648287B0BE400C7D878 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		57AC164A287B1C2900C7D878 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		57AC164A287B1C2900C7D878 /* PersonnelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelTableViewController.swift; sourceTree = "<group>"; };
 		57AC164C287B23E800C7D878 /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +103,8 @@
 			children = (
 				57AC1641287B080200C7D878 /* Person+CoreDataClass.swift */,
 				57AC1642287B080200C7D878 /* Person+CoreDataProperties.swift */,
+				57969314287C4F0A00096F58 /* Department+CoreDataClass.swift */,
+				57969315287C4F0A00096F58 /* Department+CoreDataProperties.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -103,8 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				57AC162D287AFBC800C7D878 /* ViewController.swift */,
-				57AC164A287B1C2900C7D878 /* TableViewController.swift */,
+				57AC164A287B1C2900C7D878 /* PersonnelTableViewController.swift */,
 				57AC164C287B23E800C7D878 /* AddPersonViewController.swift */,
+				57969310287C4CD400096F58 /* DepartmentsTableViewController.swift */,
+				57969312287C4CE700096F58 /* AddDepartmentViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,9 +217,13 @@
 				57AC1634287AFBC800C7D878 /* CoreDataDemo.xcdatamodeld in Sources */,
 				57AC164D287B23E800C7D878 /* AddPersonViewController.swift in Sources */,
 				57AC1644287B080200C7D878 /* Person+CoreDataProperties.swift in Sources */,
-				57AC164B287B1C2900C7D878 /* TableViewController.swift in Sources */,
+				57AC164B287B1C2900C7D878 /* PersonnelTableViewController.swift in Sources */,
+				57969313287C4CE700096F58 /* AddDepartmentViewController.swift in Sources */,
+				57969311287C4CD400096F58 /* DepartmentsTableViewController.swift in Sources */,
+				57969316287C4F0A00096F58 /* Department+CoreDataClass.swift in Sources */,
 				57AC1643287B080200C7D878 /* Person+CoreDataClass.swift in Sources */,
 				57AC162A287AFBC800C7D878 /* AppDelegate.swift in Sources */,
+				57969317287C4F0A00096F58 /* Department+CoreDataProperties.swift in Sources */,
 				57AC1649287B0BE400C7D878 /* CoreDataManager.swift in Sources */,
 				57AC162C287AFBC800C7D878 /* SceneDelegate.swift in Sources */,
 			);

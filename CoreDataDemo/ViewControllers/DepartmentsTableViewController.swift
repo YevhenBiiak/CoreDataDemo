@@ -1,25 +1,25 @@
 //
-//  TableViewController.swift
+//  DepartmentsTableViewController.swift
 //  CoreDataDemo
 //
-//  Created by Евгений Бияк on 10.07.2022.
+//  Created by Евгений Бияк on 11.07.2022.
 //
 
 import UIKit
 import CoreData
 
-class TableViewController: UITableViewController {
-
+class DepartmentsTableViewController: UITableViewController {
+    
     struct Constants {
-        static let entity = "Person"
+        static let entity = "Department"
         static let sortName = "name"
-        static let cellName = "Cell"
-        static let segueId = "AtoB"
+        static let cellName = "CellDepartment"
+        static let segueId = "AddDepartmentSegue"
     }
     
     var fetchedResultsController = CoreDataManager.shared.fetchedResultsController(
         entityName: Constants.entity,
-        sortKey: Constants.sortName) as! NSFetchedResultsController<Person>
+        sortKey: Constants.sortName) as! NSFetchedResultsController<Department>
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,11 +47,10 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellName, for: indexPath)
-        let person = fetchedResultsController.object(at: indexPath)
+        let department = fetchedResultsController.object(at: indexPath)
         
         var config = cell.defaultContentConfiguration()
-        config.text = person.name
-        config.secondaryText = String(person.age)
+        config.text = department.name
         cell.contentConfiguration = config
         
         return cell
@@ -59,15 +58,15 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let person = fetchedResultsController.object(at: indexPath)
-        performSegue(withIdentifier: Constants.segueId, sender: person)
+        let department = fetchedResultsController.object(at: indexPath)
+        performSegue(withIdentifier: Constants.segueId, sender: department)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? AddPersonViewController,
-           let person = sender as? Person,
+        if let vc = segue.destination as? AddDepartmentViewController,
+           let department = sender as? Department,
             segue.identifier == Constants.segueId {
-            vc.person = person
+            vc.department = department
         }
     }
     
@@ -77,14 +76,14 @@ class TableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            let person = fetchedResultsController.object(at: indexPath)
-            CoreDataManager.shared.context.delete(person)
+            let department = fetchedResultsController.object(at: indexPath)
+            CoreDataManager.shared.context.delete(department)
             CoreDataManager.shared.saveContext()
         }
     }
 }
 
-extension TableViewController: NSFetchedResultsControllerDelegate {
+extension DepartmentsTableViewController: NSFetchedResultsControllerDelegate {
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }
@@ -106,11 +105,10 @@ extension TableViewController: NSFetchedResultsControllerDelegate {
             }
         case .update:
             if let indexPath = indexPath {
-                let person = fetchedResultsController.object(at: indexPath)
+                let department = fetchedResultsController.object(at: indexPath)
                 let cell = tableView.cellForRow(at: indexPath)
                 var config = cell?.defaultContentConfiguration()
-                config?.text = person.name
-                config?.secondaryText = String(person.age)
+                config?.text = department.name
                 cell?.contentConfiguration = config
             }
         @unknown default:
