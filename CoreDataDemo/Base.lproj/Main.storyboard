@@ -221,6 +221,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afc-9S-XJh">
+                                <rect key="frame" x="20" y="389.5" width="114" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lWV-94-nV6">
+                                <rect key="frame" x="20" y="420.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dec-fQ-c9y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -229,27 +240,34 @@
                             <constraint firstItem="aOu-2C-nzv" firstAttribute="trailing" secondItem="dec-fQ-c9y" secondAttribute="trailing" id="3eA-2m-qn9"/>
                             <constraint firstItem="dec-fQ-c9y" firstAttribute="trailing" secondItem="JYr-pN-HUz" secondAttribute="trailing" constant="280" id="4hx-Nh-iYq"/>
                             <constraint firstItem="Bz6-RG-krP" firstAttribute="top" secondItem="SOc-p4-iSd" secondAttribute="bottom" constant="10" id="6aM-3l-jMC"/>
+                            <constraint firstItem="dec-fQ-c9y" firstAttribute="trailing" secondItem="lWV-94-nV6" secondAttribute="trailing" constant="20" id="8Bf-1I-3yF"/>
                             <constraint firstItem="wVV-Wb-DSe" firstAttribute="leading" secondItem="dec-fQ-c9y" secondAttribute="leading" constant="20" id="9g0-3Z-QfO"/>
                             <constraint firstItem="aOu-2C-nzv" firstAttribute="top" secondItem="9Xk-3k-1AL" secondAttribute="top" id="BuF-KX-H6z"/>
                             <constraint firstItem="Bz6-RG-krP" firstAttribute="leading" secondItem="dec-fQ-c9y" secondAttribute="leading" constant="20" id="CLO-9M-lEM"/>
                             <constraint firstItem="KBK-Ou-bSv" firstAttribute="leading" secondItem="dec-fQ-c9y" secondAttribute="leading" constant="20" id="COK-YG-cl5"/>
                             <constraint firstItem="JYr-pN-HUz" firstAttribute="leading" secondItem="dec-fQ-c9y" secondAttribute="leading" constant="20" id="CSV-Pz-MPv"/>
+                            <constraint firstItem="Afc-9S-XJh" firstAttribute="leading" secondItem="dec-fQ-c9y" secondAttribute="leading" constant="20" id="JGw-dg-uVS"/>
                             <constraint firstItem="SOc-p4-iSd" firstAttribute="leading" secondItem="dec-fQ-c9y" secondAttribute="leading" constant="20" id="JjM-2Q-CVw"/>
                             <constraint firstItem="yNI-1c-AfF" firstAttribute="leading" secondItem="dec-fQ-c9y" secondAttribute="leading" constant="20" id="K9d-Hg-BOL"/>
+                            <constraint firstItem="lWV-94-nV6" firstAttribute="leading" secondItem="dec-fQ-c9y" secondAttribute="leading" constant="20" id="Lt7-nR-VX9"/>
                             <constraint firstItem="dec-fQ-c9y" firstAttribute="trailing" secondItem="SOc-p4-iSd" secondAttribute="trailing" constant="280" id="Mbm-TQ-AeI"/>
                             <constraint firstItem="wVV-Wb-DSe" firstAttribute="top" secondItem="aOu-2C-nzv" secondAttribute="bottom" constant="35" id="NYy-MS-WNO"/>
                             <constraint firstItem="KBK-Ou-bSv" firstAttribute="top" secondItem="wVV-Wb-DSe" secondAttribute="bottom" constant="10" id="Q3T-Qa-vfE"/>
                             <constraint firstItem="dec-fQ-c9y" firstAttribute="trailing" secondItem="wVV-Wb-DSe" secondAttribute="trailing" constant="280" id="Red-V4-0jW"/>
+                            <constraint firstItem="dec-fQ-c9y" firstAttribute="trailing" secondItem="Afc-9S-XJh" secondAttribute="trailing" constant="280" id="SLe-gB-XYV"/>
+                            <constraint firstItem="Afc-9S-XJh" firstAttribute="top" secondItem="yNI-1c-AfF" secondAttribute="bottom" constant="35" id="Ypa-DH-xoh"/>
                             <constraint firstItem="dec-fQ-c9y" firstAttribute="trailing" secondItem="KBK-Ou-bSv" secondAttribute="trailing" constant="20" id="bYe-Dd-5fD"/>
                             <constraint firstItem="aOu-2C-nzv" firstAttribute="leading" secondItem="dec-fQ-c9y" secondAttribute="leading" id="cGp-CY-aOy"/>
                             <constraint firstItem="dec-fQ-c9y" firstAttribute="trailing" secondItem="Bz6-RG-krP" secondAttribute="trailing" constant="20" id="cYh-9s-QYJ"/>
                             <constraint firstItem="JYr-pN-HUz" firstAttribute="top" secondItem="Bz6-RG-krP" secondAttribute="bottom" constant="35" id="gxj-ed-Kdw"/>
+                            <constraint firstItem="lWV-94-nV6" firstAttribute="top" secondItem="Afc-9S-XJh" secondAttribute="bottom" constant="10" id="kcf-vw-Ab2"/>
                             <constraint firstItem="yNI-1c-AfF" firstAttribute="top" secondItem="JYr-pN-HUz" secondAttribute="bottom" constant="10" id="mX1-WO-Gg3"/>
                             <constraint firstItem="dec-fQ-c9y" firstAttribute="trailing" secondItem="yNI-1c-AfF" secondAttribute="trailing" constant="20" id="urg-aP-sl9"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="ageTextFiled" destination="Bz6-RG-krP" id="tr7-Bd-eNZ"/>
+                        <outlet property="commentTextField" destination="lWV-94-nV6" id="nbw-wA-bK0"/>
                         <outlet property="departTextFiled" destination="yNI-1c-AfF" id="9cy-hQ-RZ4"/>
                         <outlet property="nameTextField" destination="KBK-Ou-bSv" id="zFH-Qx-nff"/>
                     </connections>
@@ -283,6 +301,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="O38-tn-DPT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MG9-5N-NXU">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

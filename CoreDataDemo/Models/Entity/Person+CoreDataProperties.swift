@@ -18,6 +18,7 @@ extension Person {
     @NSManaged public var name: String?
     @NSManaged public var department: String?
     @NSManaged public var age: Int16
+    @NSManaged public var comment: Comment?
 
 }
 

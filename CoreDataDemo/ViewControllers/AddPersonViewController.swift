@@ -40,6 +40,7 @@ class AddPersonViewController: UIViewController {
             }, for: .editingDidBegin)
         }
     }
+    @IBOutlet weak var commentTextField: UITextField!
     
     var person: Person?
     
@@ -49,6 +50,7 @@ class AddPersonViewController: UIViewController {
             nameTextField.text = person.name
             ageTextFiled.text = String(person.age)
             departTextFiled.text = person.department
+            commentTextField.text = person.comment?.text
         }
         
         do {
@@ -93,6 +95,7 @@ class AddPersonViewController: UIViewController {
             person?.name = name
             person?.age = age
             person?.department = department
+            person?.comment = Comment(text: commentTextField.text)
         }
         CoreDataManager.shared.saveContext()
         return true

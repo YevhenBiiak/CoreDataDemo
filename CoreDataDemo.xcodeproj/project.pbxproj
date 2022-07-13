@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		576E9618287F1396004CD102 /* Comment+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E9612287F1396004CD102 /* Comment+CoreDataClass.swift */; };
+		576E9619287F1396004CD102 /* Comment+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576E9613287F1396004CD102 /* Comment+CoreDataProperties.swift */; };
 		57969311287C4CD400096F58 /* DepartmentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57969310287C4CD400096F58 /* DepartmentsTableViewController.swift */; };
 		57969313287C4CE700096F58 /* AddDepartmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57969312287C4CE700096F58 /* AddDepartmentViewController.swift */; };
 		57969316287C4F0A00096F58 /* Department+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57969314287C4F0A00096F58 /* Department+CoreDataClass.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		576E9612287F1396004CD102 /* Comment+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataClass.swift"; sourceTree = "<group>"; };
+		576E9613287F1396004CD102 /* Comment+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		57969310287C4CD400096F58 /* DepartmentsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentsTableViewController.swift; sourceTree = "<group>"; };
 		57969312287C4CE700096F58 /* AddDepartmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDepartmentViewController.swift; sourceTree = "<group>"; };
 		57969314287C4F0A00096F58 /* Department+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Department+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -103,6 +107,8 @@
 			children = (
 				57AC1641287B080200C7D878 /* Person+CoreDataClass.swift */,
 				57AC1642287B080200C7D878 /* Person+CoreDataProperties.swift */,
+				576E9612287F1396004CD102 /* Comment+CoreDataClass.swift */,
+				576E9613287F1396004CD102 /* Comment+CoreDataProperties.swift */,
 				57969314287C4F0A00096F58 /* Department+CoreDataClass.swift */,
 				57969315287C4F0A00096F58 /* Department+CoreDataProperties.swift */,
 			);
@@ -220,6 +226,8 @@
 				57AC164B287B1C2900C7D878 /* PersonnelTableViewController.swift in Sources */,
 				57969313287C4CE700096F58 /* AddDepartmentViewController.swift in Sources */,
 				57969311287C4CD400096F58 /* DepartmentsTableViewController.swift in Sources */,
+				576E9619287F1396004CD102 /* Comment+CoreDataProperties.swift in Sources */,
+				576E9618287F1396004CD102 /* Comment+CoreDataClass.swift in Sources */,
 				57969316287C4F0A00096F58 /* Department+CoreDataClass.swift in Sources */,
 				57AC1643287B080200C7D878 /* Person+CoreDataClass.swift in Sources */,
 				57AC162A287AFBC800C7D878 /* AppDelegate.swift in Sources */,
