@@ -13,7 +13,7 @@ import CoreData
 public class Department: NSManagedObject {
     
     convenience init(name: String) {
-        self.init(entity: CoreDataManager.shared.entityDescription(forName: "Department")!, insertInto: CoreDataManager.shared.context)
+        self.init()
         self.name = name
     }
     convenience init() {

@@ -17,9 +17,9 @@ class PersonnelTableViewController: UITableViewController {
         static let segueId = "AddPersonSegue"
     }
     
-    var fetchedResultsController = CoreDataManager.shared.fetchedResultsController(
+    var fetchedResultsController: NSFetchedResultsController<Person> = CoreDataManager.shared.fetchedResultsController(
         entityName: Constants.entity,
-        sortKey: Constants.sortName) as! NSFetchedResultsController<Person>
+        sortKey: Constants.sortName)
     
     override func viewDidLoad() {
         super.viewDidLoad()

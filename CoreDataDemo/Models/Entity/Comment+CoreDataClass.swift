@@ -13,7 +13,7 @@ import CoreData
 public class Comment: NSManagedObject {
     
     convenience init(text: String?) {
-        self.init(entity: CoreDataManager.shared.entityDescription(forName: "Comment")!, insertInto: CoreDataManager.shared.context)
+        self.init()
         self.text = text
     }
     convenience init() {

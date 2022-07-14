@@ -17,9 +17,9 @@ class DepartmentsTableViewController: UITableViewController {
         static let segueId = "AddDepartmentSegue"
     }
     
-    var fetchedResultsController = CoreDataManager.shared.fetchedResultsController(
+    var fetchedResultsController: NSFetchedResultsController<Department> = CoreDataManager.shared.fetchedResultsController(
         entityName: Constants.entity,
-        sortKey: Constants.sortName) as! NSFetchedResultsController<Department>
+        sortKey: Constants.sortName)
     
     override func viewDidLoad() {
         super.viewDidLoad()

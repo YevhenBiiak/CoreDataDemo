@@ -15,9 +15,9 @@ class AddPersonViewController: UIViewController {
         static let sortName = "name"
     }
     
-    var fetchedResultsController = CoreDataManager.shared.fetchedResultsController(
+    var fetchedResultsController: NSFetchedResultsController<Department> = CoreDataManager.shared.fetchedResultsController(
         entityName: Constants.entity,
-        sortKey: Constants.sortName) as! NSFetchedResultsController<Department>
+        sortKey: Constants.sortName)
 
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ageTextFiled: UITextField!
