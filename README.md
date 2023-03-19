@@ -1,8 +1,7 @@
 # CoreDataDemo
 
-### Education project
 
-#### Leraned how to:
+### Learned how to:
 
 - create entity:
   - with auto class definition
