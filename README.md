@@ -1,5 +1,10 @@
 # CoreDataDemo
 
+<p align=center>
+  <img width=30% src="https://user-images.githubusercontent.com/80542175/226893565-9f597286-8565-4523-823f-61219e860b9e.png"/>
+  <img width=30% src="https://user-images.githubusercontent.com/80542175/226893556-f4025a31-55cd-4610-804c-78e8bc184512.png"/>
+  <img width=30% src="https://user-images.githubusercontent.com/80542175/226893562-ce5f8f2a-b8bc-4205-947e-e8d7f36c1698.png"/>
+</p>
 
 ### Learned how to:
 
@@ -13,7 +18,10 @@
 - save context
 - implement simple CoraData manager
 - handle context changes usin NSFetchedResultsControllerDelegate
-- create relationships between entities one-to-one
+- create relationships between entities
 
-<img width="700" src="https://user-images.githubusercontent.com/80542175/178520140-fe162fad-4a25-42e1-91a4-58e01a40220c.png">
-<img width="340" src="https://user-images.githubusercontent.com/80542175/178520105-97e98607-1d07-4e2d-a3ba-b8621185e3dc.gif">
+<details><summary><h2>VIDEO DEMO</h2></summary>
+
+  https://user-images.githubusercontent.com/80542175/226899481-e4edc635-8c84-46ae-accb-4af3139c1b23.mov
+  
+</details>
