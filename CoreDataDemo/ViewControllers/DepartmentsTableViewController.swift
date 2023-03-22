@@ -11,15 +11,15 @@ import CoreData
 class DepartmentsTableViewController: UITableViewController {
     
     struct Constants {
-        static let entity = "Department"
-        static let sortName = "name"
-        static let cellName = "CellDepartment"
+        static let entityName = "Department"
+        static let sortKey = "name"
+        static let cellId = "CellDepartment"
         static let segueId = "AddDepartmentSegue"
     }
     
     var fetchedResultsController: NSFetchedResultsController<Department> = CoreDataManager.shared.fetchedResultsController(
-        entityName: Constants.entity,
-        sortKey: Constants.sortName)
+        entityName: Constants.entityName,
+        sortKey: Constants.sortKey)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,7 @@ class DepartmentsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellName, for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellId, for: indexPath)
         let department = fetchedResultsController.object(at: indexPath)
         
         var config = cell.defaultContentConfiguration()

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TestViewController.swift
 //  CoreDataDemo
 //
 //  Created by Евгений Бияк on 10.07.2022.
@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController {
+class TestViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()

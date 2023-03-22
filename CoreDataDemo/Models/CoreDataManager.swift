@@ -11,8 +11,6 @@ import CoreData
 class CoreDataManager {
     static let shared = CoreDataManager()
     
-    private init() {}
-    
     lazy var context: NSManagedObjectContext = persistentContainer.viewContext
 
     lazy var persistentContainer: NSPersistentContainer = {
@@ -27,6 +25,8 @@ class CoreDataManager {
         
         return container
     }()
+    
+    private init() {}
     
     // Enity description for name
     func entityDescription(forName name: String) -> NSEntityDescription? {

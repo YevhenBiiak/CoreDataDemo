@@ -15,7 +15,7 @@
 		57969317287C4F0A00096F58 /* Department+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57969315287C4F0A00096F58 /* Department+CoreDataProperties.swift */; };
 		57AC162A287AFBC800C7D878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC1629287AFBC800C7D878 /* AppDelegate.swift */; };
 		57AC162C287AFBC800C7D878 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC162B287AFBC800C7D878 /* SceneDelegate.swift */; };
-		57AC162E287AFBC800C7D878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC162D287AFBC800C7D878 /* ViewController.swift */; };
+		57AC162E287AFBC800C7D878 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AC162D287AFBC800C7D878 /* TestViewController.swift */; };
 		57AC1631287AFBC800C7D878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AC162F287AFBC800C7D878 /* Main.storyboard */; };
 		57AC1634287AFBC800C7D878 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 57AC1632287AFBC800C7D878 /* CoreDataDemo.xcdatamodeld */; };
 		57AC1636287AFBCB00C7D878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AC1635287AFBCB00C7D878 /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 		57AC1626287AFBC800C7D878 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57AC1629287AFBC800C7D878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57AC162B287AFBC800C7D878 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57AC162D287AFBC800C7D878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		57AC162D287AFBC800C7D878 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		57AC1630287AFBC800C7D878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57AC1633287AFBC800C7D878 /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
 		57AC1635287AFBCB00C7D878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 		57AC1647287B0B8C00C7D878 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				57AC162D287AFBC800C7D878 /* ViewController.swift */,
+				57AC162D287AFBC800C7D878 /* TestViewController.swift */,
 				57AC164A287B1C2900C7D878 /* PersonnelTableViewController.swift */,
 				57AC164C287B23E800C7D878 /* AddPersonViewController.swift */,
 				57969310287C4CD400096F58 /* DepartmentsTableViewController.swift */,
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AC162E287AFBC800C7D878 /* ViewController.swift in Sources */,
+				57AC162E287AFBC800C7D878 /* TestViewController.swift in Sources */,
 				57AC1634287AFBC800C7D878 /* CoreDataDemo.xcdatamodeld in Sources */,
 				57AC164D287B23E800C7D878 /* AddPersonViewController.swift in Sources */,
 				57AC1644287B080200C7D878 /* Person+CoreDataProperties.swift in Sources */,
